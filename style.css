@@ -1,0 +1,55 @@
+body {
+    box-sizing: border-box;
+    background-color: #e9c46a;
+    justify-content: center;
+}
+
+header {
+    text-align: center;
+}
+
+.gameboard {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3,1fr);
+    margin: 15vh auto;
+    height: 50vh;
+    width: 50vh;
+    outline: 3px solid #e9c46a;
+    outline-offset: -1px;
+}
+
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #161614;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.square:hover {
+    background-color: rgba(220, 220, 220,0.4);
+}
+.player-names {
+    display: flex;   
+}
+
+.name {
+    flex-grow: 2;
+    text-align: center;
+}
+button {
+    border: 1px solid;
+    border-radius: 10px;
+    height: 10vh;
+    width: 30vh;
+    margin-bottom: 10px;
+    font-size: 40px;
+    background-color: #2a9d8f;
+}
+
+#result {
+    text-align: center;
+    font-size: 50px;
+}
